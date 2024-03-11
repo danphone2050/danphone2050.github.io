@@ -23,6 +23,17 @@ body{
     background-color:#c0c0c0;
     margin-bottom: 12px;
 }
+.wehelp{
+    border: 1px dashed black;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+    background-color: #cccccc;
+    margin-bottom:3px;
+    padding:3px;
+}
 .title{
     border: 3px solid blueviolet;
     font-family: 'Noto Sans TC', sans-serif;
