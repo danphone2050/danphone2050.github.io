@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta nane="viewport" content="width=device-width,initial-scale=1.0">
+    <title> 用箭頭函式以及event 製作 1+2+3+n</title>
+</head>
+
+<body>
+    <h3> 請於下方框格輸入數字後，將計算出1+至n的數字</h3>
+    <input id="input" type="number" placeholder="請輸入數字">
+    <button onclick="change();">送出</button>
+    <div id="result"></div>
+    <script>
+            let change = function () {
+                let input = document.querySelector("#input");
+                let value=parseInt(input.value); //轉換成整數
+                let result = document.querySelector("#result");
+
+                let end = 0;
+                for (let n = 0; n <= value; n++) {
+                    end += n;
+                }
+                result.innerHTML = "<div>" + end + "</div>";
+                
+                
+                console.log(end);
+                return end;
+            }
+
+
+            /*
+            這個小作業犯的錯!!
+            1. querySelector後面的ID記得要加#
+            2. return要在函式的最後 不然會被中斷
+            3. innerHTML 的DIV 要加括號
+            4. console.log(end) 這個要在函式內 因為函式外沒辦法取用函式內的資料
+
+
+            學習到的
+            1. value可以直接取用
+            2. parseInt 轉換成整數
+            */
+    </script>
+</body>
+
+</html>
